@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ef" />
+    <meta name="description" content="날짜별로 정리한 작은 순간들의 사진 기록입니다." />
+    <title>작은 순간들 — 사진 기록</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="작은 순간들 홈">
+        <span class="wordmark-mark" aria-hidden="true">✳</span>
+        <span>little moments</span>
+      </a>
+      <a class="header-link" href="#gallery">사진 모아보기 <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> PHOTO JOURNAL · 2026</p>
+          <h1 id="page-title">작은 순간들을<br /><span>모아 두었어요.</span></h1>
+          <p class="intro-description">사진 파일명에 담긴 날짜를 따라 정리한 기록.<br class="desktop-break" /> 순서를 바꾸며 하루하루를 천천히 둘러보세요.</p>
+        </div>
+        <div class="intro-note" aria-label="사진 모음 기간">
+          <span class="note-label">COLLECTED FROM</span>
+          <span class="note-date">SEP — NOV</span>
+          <span class="note-year">2026</span>
+          <span class="note-flower" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow section-eyebrow">THE GALLERY</p>
+            <h2 id="gallery-title">사진 한 장씩</h2>
+          </div>
+          <div class="gallery-controls" role="group" aria-label="사진 날짜 정렬">
+            <button class="sort-button" type="button" data-order="newest" aria-pressed="true">최신순 <span aria-hidden="true">↓</span></button>
+            <button class="sort-button" type="button" data-order="oldest" aria-pressed="false">오래된 순 <span aria-hidden="true">↑</span></button>
+          </div>
+        </div>
+
+        <div class="gallery-meta">
+          <span id="photo-count">사진 8장</span>
+          <span class="meta-separator" aria-hidden="true">/</span>
+          <span id="sort-status" aria-live="polite">최신 날짜부터 보고 있어요</span>
+        </div>
+        <div class="photo-grid" id="photo-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>매일의 작은 장면들, 오래도록.</span>
+      <span class="footer-year">2026 <span aria-hidden="true">✳</span></span>
+    </footer>
+  </body>
+</html>
+
